@@ -1,0 +1,123 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #f1e4da;
+
+
+}
+.todoName{
+    font-family: 'Marck Script';
+    font-size: 40px;
+    color: #0922A1;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.todo{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    background-color: #FFF8F2;
+}
+
+
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style-type: none;
+    font-size: 25px;
+    cursor: pointer;
+    transition: .2s
+}
+
+li:hover{
+    background: #efefef;
+    transition: .2s;
+}
+
+div{
+    padding: 10px;
+}
+
+.done ul li::after{
+    content: " ✓ ";
+    color:#f3c76a;
+}
+
+.notDone{
+    display: inline-block;
+    min-height: 170px;
+    text-align: left;
+}
+
+.line{
+    display: inline-block;
+    /*padding: 0;*/
+    border-bottom: 3px solid #f3c76a ;
+    width: 400px;
+    align-self: center;
+    padding: 0;
+    margin-bottom: 7px;
+}
+
+.done{
+    min-height: 170px;
+    display: inline-block;
+    text-align: left;
+}
+
+.section-title{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: lightgray;
+    padding-bottom: 10px;
+
+}
+
+
+
+#add{
+    justify-self: center;
+    width: 100px;
+    background: #f3c76a;
+    border: 2px solid #f3c76a;
+    cursor: pointer;
+    font-size: 20px;
+    transition: .3s;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    align-self: center;
+}
+
+
+
+#add:hover{
+    background: #f3c76a;
+    transition: .4s;
+    border: 2px solid #0922A1;
+    color: #0922A1;
+}
+
+input{
+    margin: 10px;
+    width: 250px;
+    height: 20px;
+    font-size: 20px;
+    padding: 5px;
+    align-self: center;
+    border: 2px solid #0922A1 ;
+
+}
+
+input:focus{
+    outline: #0922A1;
+}
